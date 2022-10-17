@@ -31,9 +31,17 @@
       },
       {'Book ID': '3', 'Book Name': 'Popular Science',
        'Category': 'Science', 'Price': '210.40'
+      },
+        {'Book ID': '4', 'Book Name': 'Challenging Times',
+       'Category': 'Business', 'Price': '125.60'
+      },
+      {'Book ID': '5', 'Book Name': 'Learn JavaScript',
+       'Category': 'Programming', 'Price': '56.00'
+      },
+      {'Book ID': '6', 'Book Name': 'Popular Science',
+       'Category': 'Science', 'Price': '210.40'
       }
     ]
-
     // Extract value from table header. 
     // ('Book ID', 'Book Name', 'Category' and 'Price')
     let col = [];
@@ -58,7 +66,7 @@
     }
 
     // add json data to the table as rows.
-    for (let i = 0; i < myBooks.length; i++) {
+    for (let i = (myBooks.length-1); i >=(myBooks.length-3); i--) {
 
       tr = table.insertRow(-1);
 
